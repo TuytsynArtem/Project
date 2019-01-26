@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  last_name: MyString
+  age: 1
+  login: MyString
+  password: MyString
+  rating: 1
+  awards: MyString
+  mail: MyString
+  phone_number: MyString
+  description: MyString
+  country: MyString
+  city: MyString
+  admin: false
+
+two:
+  name: MyString
+  last_name: MyString
+  age: 1
+  login: MyString
+  password: MyString
+  rating: 1
+  awards: MyString
+  mail: MyString
+  phone_number: MyString
+  description: MyString
+  country: MyString
+  city: MyString
+  admin: false

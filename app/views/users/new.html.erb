@@ -1,0 +1,41 @@
+<a href="http://localhost:3000/"> <li class="li1">Главная</li></a>
+<a href="http://localhost:3000/users"> <li class="li1">Аккаунты</li></a>
+<a href="http://localhost:3000/show"> <li class="li1">nill</li></a>
+<h1 >
+<div class="cen">
+
+
+
+  <%=form_for @user do |f|  %>
+    <div>
+    <%=f.label :Регистрация %>
+    </div>
+      <div >
+
+  <%=f.text_field :name    %>
+
+  <%=f.label :name%>
+</div>
+  <div>
+<%=f.text_field :last_name%>
+
+  <%=f.label :last_name%>
+  </div>
+  <div>
+  <%=f.text_field :login   %>
+  <%=f.label :login%>
+  </div>
+  <div>
+<%=f.text_field :password%>
+
+<%=f.label :password %>
+  </div>
+  <div>
+<%=f.submit %>
+  </div>
+<% end %>
+</div>
+
+
+
+

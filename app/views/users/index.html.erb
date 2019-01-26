@@ -1,0 +1,18 @@
+<div>
+  <a href="http://localhost:3000/"> <li class="li1">Main</li></a>
+  <a href="http://localhost:3000/users"> <li class="li1">Accounts</li></a>
+  <a href="http://localhost:3000/show"> <li class="li1">nill</li></a>
+</div>
+
+
+
+<div class="accounts">
+  <% @user.each do |u| %>
+  <p>
+    <%= u.name + ', ' + u.last_name %>
+    <%=u.login + ', ' + u.password %>
+  </p>
+<% end %>
+
+
+</div>

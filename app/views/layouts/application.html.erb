@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PoiskGuru</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <%if flash[:motice] %>
+    <div style="background-color: #ffd79e">
+<% flash[:notice]%>
+<%end %>
+
+    </div>
+  <%= current_user.nil? ? 'Guest' : current_user %>
+    <%= yield %>
+  </body>
+</html>
